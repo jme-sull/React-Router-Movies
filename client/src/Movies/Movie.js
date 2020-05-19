@@ -6,6 +6,9 @@ import { useParams } from 'react-router-dom'
 const Movie = (props) => {
   const [movie, setMovie] = useState();
   const params = useParams();
+
+  const { saveMovie } = props
+
   debugger
  
  
@@ -56,7 +59,7 @@ const Movie = (props) => {
           </div>
         ))}
       </div>
-      <div className="save-button">Save</div>
+      <div onClick = {event => saveMovie(movie)} className="save-button">Save</div>
     </div>
   );
 }
