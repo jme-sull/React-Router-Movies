@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+
 const Movie = (props) => {
   const [movie, setMovie] = useState();
  
